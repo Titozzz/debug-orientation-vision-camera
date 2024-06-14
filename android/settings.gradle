@@ -1,4 +1,4 @@
-rootProject.name = 'debugorientationvisioncamera'
+rootProject.name = 'debug-orientation-vision-camera'
 
 dependencyResolutionManagement {
   versionCatalogs {

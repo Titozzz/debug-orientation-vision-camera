@@ -2,6 +2,33 @@
   "expo": {
     "name": "debug-orientation-vision-camera",
     "slug": "debug-orientation-vision-camera",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "$(PRODUCT_NAME) needs access to your Microphone."
+        }
+      ]
+    ],
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.titozzz.debugorientationvisioncamera"
+    },
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "$(PRODUCT_NAME) needs access to your Camera.",
+        "NSMicrophoneUsageDescription": "$(PRODUCT_NAME) needs access to your Microphone."
+      },
+      "bundleIdentifier": "com.titozzz.debugorientationvisioncamera"
+    }
   }
 }

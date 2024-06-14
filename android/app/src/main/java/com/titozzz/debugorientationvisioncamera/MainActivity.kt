@@ -1,4 +1,4 @@
-package com.debugorientationvisioncamera
+package com.titozzz.debugorientationvisioncamera
 
 import android.os.Build
 import android.os.Bundle
